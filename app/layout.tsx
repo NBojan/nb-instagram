@@ -16,6 +16,9 @@ const quicksand = Quicksand({
 })
 
 export const metadata: Metadata = {
+  title: "NB - Instagram",
+  description: 'NB Instagram clone. Project made for learning and self-development.',
+  keywords: "NB, NBojan, nbojan, instagram, clone, work, project, development, focus, insta",
   openGraph: {
     title: 'NB - Instagram',
     description: 'NB Instagram clone. Project made for learning and self-development.',
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     siteName: 'NB - Instagram',
     images: [
       {
-        url: 'https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fthumb.png?alt=media&token=7e9e5088-a05d-44f7-b623-33588845e38c',
+        url: 'https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fthumb2.png?alt=media&token=a8dd579c-0fda-45af-bf5b-60f5d35f4a54',
         width: 1280,
         height: 642,
       },
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     description: 'NB Instagram clone. Project made for learning and self-development.',
     images: [
       {
-        url: 'https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fthumb.png?alt=media&token=7e9e5088-a05d-44f7-b623-33588845e38c',
+        url: 'https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fthumb2.png?alt=media&token=a8dd579c-0fda-45af-bf5b-60f5d35f4a54',
         width: 1280,
         height: 642,
       },
