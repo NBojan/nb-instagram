@@ -16,12 +16,36 @@ const quicksand = Quicksand({
 })
 
 export const metadata: Metadata = {
-  title: 'NB - Instagram',
-  description: 'NB Instagram clone. Project made for learning and self-development.',
-  applicationName: 'NB Instagram',
-  creator: 'NBojan',
-  keywords: 'NBojan, instagram, insta, project, learning, clone, insta'
-  
+  openGraph: {
+    title: 'NB - Instagram',
+    description: 'NB Instagram clone. Project made for learning and self-development.',
+    url: 'https://nb-instagram.vercel.app/',
+    siteName: 'NB - Instagram',
+    images: [
+      {
+        url: 'https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fthumb.png?alt=media&token=7e9e5088-a05d-44f7-b623-33588845e38c',
+        width: 1280,
+        height: 642,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website',
+  },
+  twitter: {
+    title: 'NB - Instagram',
+    site: 'NB - Instagram',
+    description: 'NB Instagram clone. Project made for learning and self-development.',
+    images: [
+      {
+        url: 'https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fthumb.png?alt=media&token=7e9e5088-a05d-44f7-b623-33588845e38c',
+        width: 1280,
+        height: 642,
+      },
+    ],
+    creator: 'NBojan',
+    creatorId: 'NBojan',
+    card: 'summary'
+  }
   
 }
 
