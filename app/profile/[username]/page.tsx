@@ -1,4 +1,5 @@
 import { db } from "@/firebase";
+import { notFound } from "next/navigation";
 import { ProfileHeader, ProfilePosts } from "@/app/components";
 import { collection, getDocs, orderBy, query, where } from "firebase/firestore";
 
@@ -7,7 +8,7 @@ const getUser = async (username:string) => {
     const userQuery = query(collection(db, "users"), where('username', "==", username));
     const usersSnapshot = await getDocs(userQuery);
     usersSnapshot.forEach((doc) => userExists.push({id: doc.id, ...doc.data()}));
-    if(userExists.length < 1) throw new Error('User Not Found');
+    if(userExists.length < 1) return notFound();
     else {
       const userData = userExists[0];
       const userPosts = [] as any;

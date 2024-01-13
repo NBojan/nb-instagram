@@ -1,11 +1,12 @@
 import { db } from "@/firebase";
+import { notFound } from "next/navigation";
 import { doc, getDoc } from "firebase/firestore";
 import { postElement } from "@/app/components/feed/Posts";
 import { PostCaption, PostComments, PostHeader, PostImage, PostInteract, UploadComment } from "@/app/components";
 
 const getPost = async (id:string) => {
     const postSnap = await getDoc(doc(db, "userPosts", id));
-    if(!postSnap.exists()) throw new Error("Post does not exist");
+    if(!postSnap.exists()) return notFound();
     else return {
         id: postSnap.id,
         ...postSnap.data()

@@ -4,9 +4,9 @@ export const logoImg = "https://firebasestorage.googleapis.com/v0/b/insta-clone-
 export const logImg = "https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Finstagram-logo-name.png?alt=media&token=d616c6a1-5233-4758-9fe5-d59f2f1c3cde";
 export const loadingImg = "https://firebasestorage.googleapis.com/v0/b/insta-clone-cb289.appspot.com/o/appImages%2Fbounce.png?alt=media&token=cf7a88e2-6ec1-41e1-b694-69cce0bfe376";
 
-export const loginUrl = 'http://localhost:3000/api/auth/login';
-export const registerUrl = 'http://localhost:3000/api/auth/register';
-export const tokenLoginUrl = 'http://localhost:3000/api/auth/tokenLogin';
-// export const loginUrl = 'https://nb-instagram.vercel.app/api/auth/login';
-// export const registerUrl = 'https://nb-instagram.vercel.app/api/auth/register';
-// export const tokenLoginUrl = 'https://nb-instagram.vercel.app/api/auth/tokenLogin';
+// export const loginUrl = 'http://localhost:3000/api/auth/login';
+// export const registerUrl = 'http://localhost:3000/api/auth/register';
+// export const tokenLoginUrl = 'http://localhost:3000/api/auth/tokenLogin';
+export const loginUrl = 'https://nb-instagram.vercel.app/api/auth/login';
+export const registerUrl = 'https://nb-instagram.vercel.app/api/auth/register';
+export const tokenLoginUrl = 'https://nb-instagram.vercel.app/api/auth/tokenLogin';
