@@ -78,9 +78,11 @@ h1,h2,h3,h4,h5 { font-family: var(--font-quicksand); }
 		sm:min-w-[28px] sm:w-[28px] sm:h-[28px]
 		lg:min-w-[32px] lg:w-[32px] lg:h-[32px]
 	}
+	.circle-effect { @apply rounded-full p-[1.5px] bg-white border border-gray-300 object-cover }
 }
 
 .page { min-height: calc(100vh - 5rem); }
+.loading-page { min-height: calc(100vh); }
 /*defaults*/
 * {
 	padding: 0;

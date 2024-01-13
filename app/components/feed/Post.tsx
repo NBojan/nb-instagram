@@ -8,7 +8,7 @@ const Post = ({ id, caption, image, userImg, username }: postElement) => {
       <PostImage image={image} />
       <PostInteract postId={id} />
       <PostCaption username={username} caption={caption} />
-      <PostComments postId={id} />
+      <PostComments postId={id} postPage={false} />
       <UploadComment postId={id} />
     </article>
   );

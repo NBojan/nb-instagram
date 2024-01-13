@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 const PostCaption = ({
@@ -14,7 +15,9 @@ const PostCaption = ({
   return (
     <div className="flex post-padding-x py-2 space-x-2">
       <h5 className="font-bold text-resp truncate max-w-[300px] flex-shrink-0">
-        {username}
+        <Link href={`/profile/${username}`}>
+          {username}
+        </Link>
       </h5>
 
       <p

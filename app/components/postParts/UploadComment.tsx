@@ -35,7 +35,7 @@ const UploadComment = ({ postId }: { postId: string }) => {
       <input
         type="text"
         placeholder="Enter your comment..."
-        className="w-full outline-none text-resp tracking-wide"
+        className="w-full outline-none text-resp tracking-wide bg-transparent"
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         autoComplete="off"

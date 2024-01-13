@@ -30,6 +30,9 @@ import MiniProfile from "./miniProfile/MiniProfile";
 import Profile from "./miniProfile/Profile";
 import Suggestions from "./miniProfile/Suggestions";
 import Suggestion from "./miniProfile/Suggestion";
+import ProfileHeader from "./profile/ProfileHeader";
+import ProfilePosts from "./profile/ProfilePosts";
+import ProfilePost from "./profile/ProfilePost";
 
 export {
   AppLoading,
@@ -63,5 +66,8 @@ export {
   MiniProfile,
   Profile,
   Suggestions,
-  Suggestion
+  Suggestion,
+  ProfileHeader,
+  ProfilePosts,
+  ProfilePost
 };

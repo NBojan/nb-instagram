@@ -1,7 +1,8 @@
 "use client"
 
-import { useGlobalContext } from "@/app/context/context";
+import Link from "next/link";
 import Image from "next/image";
+import { useGlobalContext } from "@/app/context/context";
 
 const Profile = () => {
     const { user, signOut } = useGlobalContext();
@@ -17,7 +18,11 @@ const Profile = () => {
             className="min-w-[64px] w-[64px] h-[64px] rounded-full p-[1.5px] bg-white border border-gray-300 object-cover"
           />
           <div className="space-y-1">
-            <h5 className="font-semibold text-sm max-w-[160px] truncate">{user.username}</h5>
+            <h5 className="font-semibold text-sm max-w-[160px] truncate">
+              <Link href={`/profile/${user.username}`}>
+                {user.username}
+              </Link>
+            </h5>
             <p className="text-xs text-gray-400">Welcome to Instagram!</p>
           </div>
         </div>

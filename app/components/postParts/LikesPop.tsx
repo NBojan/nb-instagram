@@ -32,7 +32,7 @@ const LikesPop = ({
         </button>
 
         {likes.map((like) => (
-          <div key={like.id} className="flex items-center space-x-2 mb-2">
+          <div key={like.id} className="flex items-center space-x-2 mb-3">
             <Image
               src={like.userImg}
               alt={like.username}

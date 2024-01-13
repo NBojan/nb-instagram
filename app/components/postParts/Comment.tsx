@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { formatDistanceToNow } from "date-fns";
 import { commentElement } from "./PostComments";
@@ -16,7 +17,9 @@ const Comment = ({ comment, timestamp, userImg, username }: commentElement) => {
       <div className="flex-1">
         <div className="flex justify-between flex-col xs:flex-row xs:items-center xs:space-x-1">
           <p className="text-resp font-semibold truncate leading-none">
-            {username}
+            <Link href={`/profile/${username}`}>
+              {username}
+            </Link>
           </p>
           <p className="text-xs text-gray-400 whitespace-nowrap">
             {formatDistanceToNow(timestamp.toDate())}

@@ -13,7 +13,7 @@ export interface commentElement {
   username: string;
 }
 
-const PostComments = ({ postId }: { postId: string }) => {
+const PostComments = ({ postId, postPage }: { postId: string, postPage: boolean }) => {
     const [comments, setComments] = useState<commentElement[]>([]);
 
     useEffect(() => {
@@ -30,11 +30,9 @@ const PostComments = ({ postId }: { postId: string }) => {
     return (
       <div className="px-6 sm:px-8 py-1">
         {comments.length < 1 ? (
-          <p className="text-resp text-gray-500">
-            Be the first to leave a comment.
-          </p>
+          <p className="text-resp text-gray-500">Be the first to leave a comment.</p>
         ) : (
-          <div className="max-h-[6rem] overflow-y-scroll scrollbar-none">
+          <div className={`${postPage ? 'max-h-[10rem]' : 'max-h-[6rem]'} overflow-y-scroll scrollbar-thin`}>
             {comments.map((comment) => (
               <Comment key={comment.id} {...comment} />
             ))}

@@ -1,11 +1,11 @@
 import { LogPage } from "../components";
 
 const Registration = () => {
-    return (  
-        <>
-            <LogPage />
-        </>
-    );
+  return (
+    <>
+      <LogPage />
+    </>
+  );
 }
  
 export default Registration;
